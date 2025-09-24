@@ -1,0 +1,99 @@
+.footer {
+    background: #f1f3f6;
+    // .footer__container
+    &__container {
+    }
+    // .footer__bottom
+    &__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 47px 0px 30px 0px;
+        margin: 0px -18px;
+        @media (max-width: 768px) {
+            flex-direction: column-reverse;
+            align-items: start;
+            justify-content: start;
+            padding: 9px 0px 18px 0px;
+            margin: 0px 0px 0px 0px;
+        }
+    }
+}
+
+.bottom-footer {
+    // .bottom-footer__left
+    &__left {
+        display: flex;
+        align-items: center;
+        padding: 0px 18px;
+        flex: 0 1 54%;
+        margin: -6px -40px;
+        @media (max-width: 1310px) {
+            flex: 0 1 50%;
+            flex-direction: column;
+            align-items: start;
+            margin: -6px 0px;
+        }
+        @media (max-width: 768px) {
+            margin: -4px 0px;
+            flex: 1 1 auto;
+            padding: 0px 0px 0px 0px;
+        }
+        p {
+            padding: 6px 40px;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 150%;
+            color: rgba(0, 0, 0, 0.56);
+            @media (max-width: 1310px) {
+                padding: 6px 0px;
+            }
+            @media (max-width: 768px) {
+                padding: 4px 0px;
+            }
+            @media (max-width: 375px) {
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+    // .bottom-footer__right
+    &__right {
+        flex: 0 1 46%;
+        padding: 0px 18px;
+        margin: -6px;
+        display: flex;
+        justify-content: flex-end;
+        @media (max-width: 1310px) {
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: start;
+            flex: 0 1 50%;
+        }
+        @media (max-width: 768px) {
+            align-items: start;
+            flex: 1 1 auto;
+            margin: -4px 0px;
+            padding: 0px 0px 8px 0px;
+        }
+        a {
+            display: inline-flex;
+            padding: 6px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 121%;
+            color: #23283b;
+            transition: all 0.3s ease 0s;
+            text-align: right;
+            &:hover {
+                color: var(--theme-color-accent);
+            }
+            @media (max-width: 768px) {
+                padding: 4px 0px;
+                font-size: 12px;
+                text-align: left;
+            }
+        }
+    }
+}

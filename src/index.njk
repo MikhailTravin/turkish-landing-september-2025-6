@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная страница</title>
+	{% include 'blocks/head.njk' %}
+</head>
+
+<body class="preload mp">
+	<div class="main-wrapper-outer">
+		{% include 'blocks/header.njk' %}
+		<main class="main">
+
+			<div class="main-home">
+				<div class="container">
+					<div class="main-home__content">
+						<img class="main-home__flag" src="img/flag.webp" alt="">
+						<img class="main-home__image" src="img/image1.webp" alt="">
+						<div class="main-home__body">
+							<div class="main-home__top">
+								<img src="img/icon/logo.svg" alt="" class="main-home__logo">
+								<img src="img/icon/logo-mob.svg" alt="" class="main-home__logo-mob">
+								<span>
+									Школа турецкого языка «Диалог»
+								</span>
+								<svg width="330" height="2" viewBox="0 0 330 2" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path d="M0 1H330" stroke="url(#paint0_linear_9665_13291)" stroke-width="2" />
+									<defs>
+										<linearGradient id="paint0_linear_9665_13291" x1="-nan" y1="-nan" x2="-nan"
+											y2="-nan" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#E6514A" />
+											<stop offset="1" stop-color="white" stop-opacity="0" />
+										</linearGradient>
+									</defs>
+								</svg>
+								<div class="main-home__title">
+									Успейте воспользоваться возможностью выучить
+								</div>
+								<div class="title1">
+									турецкий язык <span>на лучших условиях</span>
+								</div>
+								<div class="main-home__title">в удобном для вас формате!</div>
+								<img class="main-home__image mob" src="img/image1.webp" alt="">
+							</div>
+							<div class="main-home__buttons">
+								<a href="#packages" class="btn">
+									Выбрать обучение
+								</a>
+								<div class="main-home__left">
+									<div class="time-count" data-target-date="Sep 30 2025 00:00:00">
+										<div class="time-count__content">
+											<div class="time-count__item time-count__days">
+												<div class="time-count__val">00</div>
+												<div class="time-count__text">дни</div>
+											</div>
+											<div class="time-count__sep">
+												<svg width="8" height="23" viewBox="0 0 8 23" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M3.92838 6.972C2.97638 6.972 2.16437 6.65 1.49237 6.006C0.820374 5.334 0.484375 4.494 0.484375 3.486C0.484375 2.422 0.820374 1.582 1.49237 0.966C2.16437 0.322 2.97638 0 3.92838 0C4.88037 0 5.69237 0.322 6.36437 0.966C7.03637 1.582 7.37238 2.422 7.37238 3.486C7.37238 4.494 7.03637 5.334 6.36437 6.006C5.69237 6.65 4.88037 6.972 3.92838 6.972ZM3.92838 22.974C2.97638 22.974 2.16437 22.652 1.49237 22.008C0.820374 21.336 0.484375 20.496 0.484375 19.488C0.484375 18.424 0.820374 17.584 1.49237 16.968C2.16437 16.324 2.97638 16.002 3.92838 16.002C4.88037 16.002 5.69237 16.324 6.36437 16.968C7.03637 17.584 7.37238 18.424 7.37238 19.488C7.37238 20.496 7.03637 21.336 6.36437 22.008C5.69237 22.652 4.88037 22.974 3.92838 22.974Z"
+														fill="#E6514A" />
+												</svg>
+											</div>
+											<div class="time-count__item time-count__hours">
+												<div class="time-count__val ">00</div>
+												<div class="time-count__text">часы</div>
+											</div>
+											<div class="time-count__sep">
+												<svg width="8" height="23" viewBox="0 0 8 23" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M3.92838 6.972C2.97638 6.972 2.16437 6.65 1.49237 6.006C0.820374 5.334 0.484375 4.494 0.484375 3.486C0.484375 2.422 0.820374 1.582 1.49237 0.966C2.16437 0.322 2.97638 0 3.92838 0C4.88037 0 5.69237 0.322 6.36437 0.966C7.03637 1.582 7.37238 2.422 7.37238 3.486C7.37238 4.494 7.03637 5.334 6.36437 6.006C5.69237 6.65 4.88037 6.972 3.92838 6.972ZM3.92838 22.974C2.97638 22.974 2.16437 22.652 1.49237 22.008C0.820374 21.336 0.484375 20.496 0.484375 19.488C0.484375 18.424 0.820374 17.584 1.49237 16.968C2.16437 16.324 2.97638 16.002 3.92838 16.002C4.88037 16.002 5.69237 16.324 6.36437 16.968C7.03637 17.584 7.37238 18.424 7.37238 19.488C7.37238 20.496 7.03637 21.336 6.36437 22.008C5.69237 22.652 4.88037 22.974 3.92838 22.974Z"
+														fill="#E6514A" />
+												</svg>
+											</div>
+											<div class="time-count__item time-count__minutes">
+												<div class="time-count__val">00</div>
+												<div class="time-count__text">минуты</div>
+											</div>
+										</div>
+									</div>
+									<div class="main-home__time-text">Специальное предложение только до 23:59 Мск</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="block-packages">
+				<div class="container">
+					<div class="block-packages__content">
+						<div class="block-packages__body">
+							<div class="block-packages__top">
+								<h2 class="title2">
+									<span>Увлекательное самостоятельное обучение</span> по тщательно отобранным
+									материалам
+								</h2>
+								<img loading="lazy" src="img/image5.webp" alt="">
+							</div>
+							<div class="block-packages__column">
+								<div class="block-packages__item item-packages">
+									<div class="item-packages__top">
+										<div class="item-packages__left">
+											<div class="item-packages__type">
+												Пакет курсов
+											</div>
+											<div class="item-packages__title">
+												«Комплексный турецкий»
+											</div>
+											<div class="item-packages__images">
+												<div class="item-packages__badge">
+													<img loading="lazy" src="img/present2.webp" alt="">
+													<span>Разговорный клуб в подарок</span>
+												</div>
+												<img loading="lazy" src="img/image2.webp" alt=""
+													class="item-packages__pic1">
+												<img loading="lazy" src="img/sale1.webp" alt=""
+													class="item-packages__pic2">
+											</div>
+											<p>
+												Учитесь в своём темпе, когда удобно, и получите официальный сертификат о
+												завершении полного курса турецкого языка.
+											</p>
+										</div>
+										<div class="item-packages__right">
+											<p>
+												Полная система самостоятельного изучения турецкого — от базовых A1-A2 до
+												продвинутых грамматических навыков B1-B2, плюс 16 дополнительных курсов
+												для отработки произношения, аудирования и пополнения словаря.
+											</p>
+											<div class="item-packages-bonuses">
+												<div class="item-packages-bonuses__circle"></div>
+												<div class="item-packages-bonuses__title">БОНУСЫ:</div>
+												<ul>
+													<li>
+														Доступ в разговорный клуб для учеников онлайн-программ –
+														БЕСПЛАТНО!
+													</li>
+													<li>
+														4 разговорных занятия по 90 минут с разбором тем уровня А1
+													</li>
+												</ul>
+											</div>
+											<div class="item-packages__list">
+												<div class="item-packages__list-title">Курсы в пакете: </div>
+												<ul>
+													<li>
+														<div class="item-packages__icon">
+															<img loading="lazy" src="img/icon/check.svg" alt="">
+														</div>
+														<span>Комплексный курс «Простой турецкий», уровень A1</span>
+													</li>
+													<li>
+														<div class="item-packages__icon">
+															<img loading="lazy" src="img/icon/check.svg" alt="">
+														</div>
+														<span>Комплексный курс «Простой турецкий», уровень A2</span>
+													</li>
+													<li>
+														<div class="item-packages__icon">
+															<img loading="lazy" src="img/icon/check.svg" alt="">
+														</div>
+														<span>Грамматический курс «Простой турецкий», уровень B1</span>
+													</li>
+													<li>
+														<div class="item-packages__icon">
+															<img loading="lazy" src="img/icon/check.svg" alt="">
+														</div>
+														<span>Грамматический курс «Простой турецкий», уровень B2</span>
+													</li>
+												</ul>
+											</div>
+											<div class="item-packages-block">
+												<div class="item-packages-block__circle"></div>
+												<svg width="43" height="43" viewBox="0 0 43 43" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M17.472 42.048V0H25.536V42.048H17.472ZM0 24.864V17.28H43.008V24.864H0Z"
+														fill="white" />
+												</svg>
+												<img loading="lazy" src="img/present.webp" alt="">
+												<p>
+													16 курсов на развитие навыков говорения, восприятия на слух,
+													пополнения
+													словарного запаса (Полный список)
+												</p>
+											</div>
+											<div class="item-packages-block grey">
+												<div class="item-packages-block__circle"></div>
+												<svg width="43" height="43" viewBox="0 0 43 43" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M17.472 42.048V0H25.536V42.048H17.472ZM0 24.864V17.28H43.008V24.864H0Z"
+														fill="white" />
+												</svg>
+												<img loading="lazy" src="img/certif.webp" alt="">
+												<p>
+													Сертификат о прохождении курса
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="item-packages__bottom">
+										<div class="item-packages__left">
+											<div class="item-packages__price">
+												Обычная стоимость курсов с доступом
+												<p>
+													на 6 месяцев
+													<span>15 400 руб.</span>
+												</p>
+											</div>
+										</div>
+										<div class="item-packages__right">
+											<div class="item-packages__sale">
+												Сейчас для вас
+												<p>
+													скидка
+													<span class="fz2">64%</span>
+													+ специальный подарок
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="block-packages__bottom">
+									<div class="block-packages__price">
+										Стоимость доступа –
+										<span>
+											<span class="fz">9 900</span>
+											рублей!
+										</span>
+									</div>
+									<a href="#" data-popup="#cons" class="btn">Получить доступ</a>
+								</div>
+							</div>
+						</div>
+						<div class="block-packages__body">
+							<div class="block-packages__top">
+								<h2 class="title2">
+									<span>Интерактивное обучение</span> в дружной группе с опытным преподавателем по
+									методике,
+									проверенной за 20 лет практики
+								</h2>
+								<img loading="lazy" src="img/image6.webp" alt="">
+							</div>
+							<div class="block-packages__column">
+								<div class="block-packages__item item-packages">
+									<div class="item-packages__top">
+										<div class="item-packages__left">
+											<div class="item-packages__type">
+												Программа обучения
+											</div>
+											<div class="item-packages__title">
+												«Турецкий вместе: обучение в расширенной группе»
+											</div>
+											<div class="item-packages__images">
+												<div class="item-packages__badge">
+													<img loading="lazy" src="img/present2.webp" alt="">
+													<span>Разговорный клуб в подарок</span>
+												</div>
+												<img loading="lazy" src="img/image3.webp" alt=""
+													class="item-packages__pic1">
+												<img loading="lazy" src="img/sale2.webp" alt=""
+													class="item-packages__pic2">
+											</div>
+											<p>
+												Изучайте турецкий язык в живом общении с единомышленниками и получайте
+												персональную поддержку опытного преподавателя.
+											</p>
+										</div>
+										<div class="item-packages__right">
+											<div class="item-packages__list2">
+												<ul>
+													<li>
+														Структурированная программа с удобным графиком занятий поможет
+														вам дисциплинированно двигаться к цели и достичь уровня A2 за 3
+														месяца.
+													</li>
+													<li>
+														Получите не только знания, но и мотивацию от группы, регулярную
+														практику разговорной речи и возможность задавать вопросы
+														преподавателю в режиме реального времени.
+													</li>
+												</ul>
+											</div>
+											<div class="item-packages__list">
+												<div class="item-packages__list-title">Что входит в программу:</div>
+												<ul>
+													<li>
+														<div class="item-packages__icon">
+															<img loading="lazy" src="img/icon/check.svg" alt="">
+														</div>
+														<span>24 онлайн-занятия по 90 минут с опытным
+															преподавателем.</span>
+													</li>
+													<li>
+														<div class="item-packages__icon">
+															<img loading="lazy" src="img/icon/check.svg" alt="">
+														</div>
+														<span>Обучение в группе до 25 единомышленников.</span>
+													</li>
+													<li>
+														<div class="item-packages__icon">
+															<img loading="lazy" src="img/icon/check.svg" alt="">
+														</div>
+														<span>Гибкое расписание: утренние или вечерние занятия.</span>
+													</li>
+													<li>
+														<div class="item-packages__icon">
+															<img loading="lazy" src="img/icon/check.svg" alt="">
+														</div>
+														<span>Закрытый Telegram-чат для общения с группой и
+															преподавателем.</span>
+													</li>
+													<li>
+														<div class="item-packages__icon">
+															<img loading="lazy" src="img/icon/check.svg" alt="">
+														</div>
+														<span class="fw">Полный доступ к пакету курсов «Комплексный
+															турецкий» для самостоятельной работы.</span>
+													</li>
+													<li>
+														<div class="item-packages__icon">
+															<img loading="lazy" src="img/icon/check.svg" alt="">
+														</div>
+														<span>Рабочие тетради для структурированного изучения
+															материала.</span>
+													</li>
+													<li>
+														<div class="item-packages__icon">
+															<img loading="lazy" src="img/icon/check.svg" alt="">
+														</div>
+														<span>Записи всех занятий для повторения пропущенного
+															материала.</span>
+													</li>
+												</ul>
+											</div>
+											<div class="item-packages-bonuses">
+												<div class="item-packages-bonuses__circle"></div>
+												<div class="item-packages-bonuses__title">БОНУСЫ:</div>
+												<ul>
+													<li>
+														Доступ в разговорный клуб для дополнительной практики –
+														БЕСПЛАТНО!
+													</li>
+													<li>
+														6 разговорных занятий по 90 минут.
+													</li>
+													<li>
+														Закрытый Телеграм чат с кураторами и другими учениками.
+													</li>
+													<li>
+														Разбор тем уровня A1, которые вы будете применять в повседневной
+														жизни.
+													</li>
+													<li>
+														Возможность прокачать разговорный турецкий и заговорить в 2 раза
+														быстрее.
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="item-packages__bottom">
+										<div class="item-packages__left">
+											<div class="item-packages__price">
+												Обычная стоимость такой программы
+												<p>
+													<span>33 900 руб.</span>
+												</p>
+											</div>
+										</div>
+										<div class="item-packages__right">
+											<div class="item-packages__sale">
+												Сейчас для вас
+												<p>
+													скидка
+													<span class="fz2">58%</span>
+													+ специальный подарок
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="block-packages__bottom">
+									<div class="block-packages__price">
+										Стоимость доступа –
+										<span>
+											<span class="fz">19 900</span>
+											рублей!
+										</span>
+									</div>
+									<a href="#" data-popup="#cons" class="btn">Получить доступ</a>
+								</div>
+							</div>
+						</div>
+						<div class="block-packages__body">
+							<div class="block-packages__top">
+								<h2 class="title2">
+									<span>Премиальное обучение</span> в мини-группе с максимальным вниманием к каждому
+									студенту
+								</h2>
+								<img loading="lazy" src="img/image7.webp" alt="">
+							</div>
+							<div class="block-packages__column">
+								<div class="block-packages__item item-packages">
+									<div class="item-packages__top">
+										<div class="item-packages__left">
+											<div class="item-packages__type">
+												Программа обучения
+											</div>
+											<div class="item-packages__title">
+												«Турецкий Premium: обучение в мини-группе»
+											</div>
+											<div class="item-packages__images">
+												<div class="item-packages__badge">
+													<img loading="lazy" src="img/present2.webp" alt="">
+													<span>Разговорный клуб в подарок</span>
+												</div>
+												<img loading="lazy" src="img/image4.webp" alt=""
+													class="item-packages__pic1">
+												<img loading="lazy" src="img/sale3.webp" alt=""
+													class="item-packages__pic2">
+											</div>
+											<p>
+												Изучайте турецкий язык с индивидуальным подходом в камерной атмосфере
+												мини-группы до 8 человек. Опытный преподаватель уделит внимание каждому
+												участнику, проработает ваши слабые места и поможет достичь уровня A2 за
+												3 месяца с максимальной эффективностью.
+											</p>
+										</div>
+										<div class="item-packages__right">
+											<p>
+												Получите все преимущества группового обучения — мотивацию, практику и
+												живое общение — но с персональным вниманием, как на индивидуальных
+												занятиях.
+											</p>
+											<div class="item-packages__list">
+												<div class="item-packages__list-title">Что входит в программу:</div>
+												<ul>
+													<li>
+														<div class="item-packages__icon">
+															<img loading="lazy" src="img/icon/check.svg" alt="">
+														</div>
+														<span>24 онлайн-занятия по 90 минут с опытным
+															преподавателем</span>
+													</li>
+													<li>
+														<div class="item-packages__icon">
+															<img loading="lazy" src="img/icon/check.svg" alt="">
+														</div>
+														<span>Обучение в премиальной мини-группе до 8 человек</span>
+													</li>
+													<li>
+														<div class="item-packages__icon">
+															<img loading="lazy" src="img/icon/check.svg" alt="">
+														</div>
+														<span>Персональная обратная связь и коррекция ошибок от
+															преподавателя</span>
+													</li>
+													<li>
+														<div class="item-packages__icon">
+															<img loading="lazy" src="img/icon/check.svg" alt="">
+														</div>
+														<span>Гибкое расписание: утренние или вечерние занятия</span>
+													</li>
+													<li>
+														<div class="item-packages__icon">
+															<img loading="lazy" src="img/icon/check.svg" alt="">
+														</div>
+														<span>Закрытый Telegram-чат для общения с группой и
+															преподавателем</span>
+													</li>
+													<li>
+														<div class="item-packages__icon">
+															<img loading="lazy" src="img/icon/check.svg" alt="">
+														</div>
+														<span class="fw">Полный доступ к пакету курсов «Комплексный
+															турецкий» для самостоятельной работы</span>
+													</li>
+													<li>
+														<div class="item-packages__icon">
+															<img loading="lazy" src="img/icon/check.svg" alt="">
+														</div>
+														<span>Рабочие тетради для структурированного изучения
+															материала</span>
+													</li>
+													<li>
+														<div class="item-packages__icon">
+															<img loading="lazy" src="img/icon/check.svg" alt="">
+														</div>
+														<span>Записи всех занятий для повторения пропущенного
+															материала</span>
+													</li>
+												</ul>
+											</div>
+											<div class="item-packages-bonuses">
+												<div class="item-packages-bonuses__circle"></div>
+												<div class="item-packages-bonuses__title">БОНУСЫ:</div>
+												<ul>
+													<li>
+														<span>Разговорный клуб – БЕСПЛАТНО!</span>
+													</li>
+													<li>
+														6 разговорных занятий по 90 минут
+													</li>
+													<li>
+														Закрытый Telegram-чат с кураторами и другими учениками
+													</li>
+													<li>
+														Разбор тем уровня A1, которые сразу применяете в повседневной
+														жизни
+													</li>
+													<li>
+														Возможность прокачать разговорный турецкий и заговорить  в 2
+														раза быстрее
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="item-packages__bottom">
+										<div class="item-packages__left">
+											<div class="item-packages__price">
+												Обычная стоимость такой программы
+												<p>
+													<span>45 900 руб.</span>
+												</p>
+											</div>
+										</div>
+										<div class="item-packages__right">
+											<div class="item-packages__sale">
+												Сейчас для вас
+												<p>
+													скидка
+													<span class="fz2">63%</span>
+													+ специальный подарок
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="block-packages__bottom">
+									<div class="block-packages__price">
+										Стоимость доступа –
+										<span>
+											<span class="fz">29 900</span>
+											рублей!
+										</span>
+									</div>
+									<a href="#" data-popup="#cons" class="btn">Получить доступ</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="reviews">
+				<div class="container">
+					<div class="reviews__title title">
+						<h2 class="title2"><span>Отзывы</span> наших учеников</h2>
+						<div class="reviews__arrows arrows">
+							<div class="reviews__arrow-prev arrow-prev">
+								<img loading="lazy" src="img/icon/arrow6.svg" alt="">
+							</div>
+							<div class="reviews__arrow-next arrow-next">
+								<img loading="lazy" src="img/icon/arrow6.svg" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="reviews__content">
+						<div class="reviews__slider swiper">
+							<div class="reviews__wrapper swiper-wrapper">
+								<div class="reviews__slide swiper-slide">
+									<img loading="lazy" src="img/reviews1.webp" alt="">
+								</div>
+								<div class="reviews__slide swiper-slide">
+									<img loading="lazy" src="img/reviews2.webp" alt="">
+								</div>
+								<div class="reviews__slide swiper-slide">
+									<img loading="lazy" src="img/reviews3.webp" alt="">
+								</div>
+								<div class="reviews__slide swiper-slide">
+									<img loading="lazy" src="img/reviews4.webp" alt="">
+								</div>
+								<div class="reviews__slide swiper-slide">
+									<img loading="lazy" src="img/reviews5.webp" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</main>
+		{% include 'blocks/footer.njk' %}
+	</div>
+	<div id="cons" aria-hidden="true" class="popup popup-form">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M1.22578 13.8248L0.175781 12.7748L5.95078 6.9998L0.175781 1.2248L1.22578 0.174805L7.00078 5.9498L12.7758 0.174805L13.8258 1.2248L8.05078 6.9998L13.8258 12.7748L12.7758 13.8248L7.00078 8.0498L1.22578 13.8248Z"
+							fill="#676B78" />
+					</svg>
+				</button>
+				<div class="popup-form popup-form1 popup-form2">
+					<a href="#" class="popup-form__logo">
+						<img loading="lazy" src="img/icon/logo-mob.svg" alt="">
+					</a>
+					<form action="#" class="popup-form__form">
+						<div class="popup-form__top">
+							<div class="popup-form__title">
+								Получить доступ
+							</div>
+						</div>
+						<div class="popup-form__inputs">
+							<input autocomplete="off" type="text" name="form[]" placeholder="Ирина">
+							<input data-required="email" autocomplete="off" type="text" name="form[]"
+								placeholder="test@mail.ru">
+							<input autocomplete="off" type="text" name="form[]" placeholder="+90 (999) 999-99-99">
+						</div>
+						<div class="checkbox">
+							<input data-required id="c_2" class="checkbox__input" type="checkbox" value="2"
+								name="form[2]">
+							<label for="c_2" class="checkbox__label">
+								<span class="checkbox__icon">
+									<img src="img/icon/check.svg" alt="">
+								</span>
+								<span class="checkbox__text">
+									Соглашаюсь на обработку моих персональных данных в соответствии с <a
+										href="#">условиями</a>
+								</span>
+							</label>
+						</div>
+						<button type="submit" class="btn">Отправить</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	{% include 'blocks/scripts.njk' %}
+</body>
+
+</html>
