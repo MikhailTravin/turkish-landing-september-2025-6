@@ -73,11 +73,11 @@
             display: none;
             width: calc(100% + 85px);
             height: auto;
-            margin: 5px 0px -100px -45px;
+            margin: 5px 0px 0px -45px;
         }
         @media (max-width: 768px) {
             width: calc(100% + 38px);
-            margin: 5px 0px -100px -18px;
+            margin: 5px 0px 0px -18px;
         }
     }
 
@@ -323,12 +323,15 @@
         align-items: center;
         min-height: 213px;
         @media (max-width: 768px) {
-            padding: 16px 76px 45px 23px;
+            padding: 16px 150px 45px 23px;
             min-height: 150px;
         }
         .title2 {
             position: relative;
             z-index: 10;
+            @media (max-width: 480px) {
+                font-size: 20px;
+            }
         }
         img {
             position: absolute;
@@ -340,6 +343,12 @@
                 height: 68%;
                 bottom: -3px;
                 right: -8px;
+            }
+            @media (max-width: 420px) {
+                height: 60%;
+            }
+            @media (max-width: 400px) {
+                height: 50%;
             }
         }
     }
